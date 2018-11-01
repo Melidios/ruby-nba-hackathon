@@ -1,0 +1,10 @@
+<h1>All the teams</h1>
+
+<%= link_to root_path(sort: "by_wins") do%>
+    <span class="btn btn-success">Sort by Wins</span>
+<% end %>
+<%= link_to root_path(sort: "by_losses") do%>
+    <span class="btn btn-danger">Sort by Losses</span>
+<% end %>
+
+<%= render 'table', teams: @teams %>
